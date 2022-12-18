@@ -84,12 +84,13 @@ span {
   margin-top: 0.25rem;
 }
 
-.hero-container {
+.hero-container,
+.work-container {
   position: relative;
 }
 .hero-title {
   position: absolute;
-  top: 240px;
+  top: 350px;
   right: 0;
   background-color: var(--clr-primary-light);
   color: var(--clr-grey);
@@ -113,10 +114,105 @@ span {
 /*---------------------------------------*/
 /*----------------about me---------------*/
 /*---------------------------------------*/
+.section {
+  padding: 2rem 0;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+.section-title {
+  border-bottom: 5px solid var(--clr-grey);
+}
+.paragraph {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .section-center {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .section-title {
+    border-bottom: 0;
+    border-right: 5px solid var(--clr-grey);
+  }
+  .section-article {
+    padding-left: 1rem;
+  }
+  .paragraph {
+    margin-top: 0;
+  }
+}
 
 /*---------------------------------------*/
 /*----------------portfolio--------------*/
 /*---------------------------------------*/
+
+.work {
+  border: 5px solid var(--clr-primary);
+  height: 30vh;
+  margin: 2rem 0;
+}
+
+.work1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(44, 174, 186, 0.7)),
+    url("../images/02-portfolio-1.jpg") center/cover no-repeat;
+  transition: var(--transition);
+}
+.work2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(44, 174, 186, 0.7)),
+    url("../images/02-portfolio-2.jpg") center/cover no-repeat;
+}
+.work3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(44, 174, 186, 0.7)),
+    url("../images/02-portfolio-3.jpg") center/cover no-repeat;
+}
+.work4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(44, 174, 186, 0.7)),
+    url("../images/02-portfolio-4.jpg") center/cover no-repeat;
+}
+.work5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(44, 174, 186, 0.7)),
+    url("../images/02-run-buddy.jpg") center/cover no-repeat;
+}
+
+.work1:hover {
+  background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/02-portfolio-1.jpg") center/cover no-repeat;
+}
+.work2:hover {
+  background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/02-portfolio-2.jpg") center/cover no-repeat;
+}
+.work3:hover {
+  background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/02-portfolio-3.jpg") center/cover no-repeat;
+}
+.work4:hover {
+  background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/02-portfolio-4.jpg") center/cover no-repeat;
+}
+.work5:hover {
+  background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/02-run-buddy.jpg") center/cover no-repeat;
+}
+
+.work-title {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  background-color: var(--clr-primary-light);
+  color: var(--clr-grey);
+  padding: 0.25rem;
+  border-radius: var(--radius);
+}
+
+@media screen and (min-width: 768px) {
+  .work-top {
+    margin: 0;
+  }
+}
 
 /*---------------------------------------*/
 /*----------------contact----------------*/

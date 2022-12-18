@@ -6,6 +6,7 @@
   --transition: all 0.3s linear;
   --shadow: 0 5px 15px rgba(0, 0, 0, 1);
   --shadow-light: 0 5px 15px rgba(0, 0, 0, 0);
+  --radius: 0.5rem;
 }
 
 * {
@@ -76,7 +77,22 @@ span {
   padding-left: 0.25rem;
 }
 .hero-banner {
-  background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(44, 174, 186, 0.7)),
     url("../images/02-hero-bg.jpg") center/cover no-repeat;
-  height: 30vh;
+  height: 40vh;
+  margin-top: 0.25rem;
+}
+
+.hero-container {
+  position: relative;
+}
+.hero-title {
+  position: absolute;
+  top: 240px;
+  right: 0;
+  background-color: var(--clr-primary-light);
+  color: var(--clr-grey);
+  padding: 0.25rem;
+  margin-right: 1rem;
+  border-radius: var(--radius);
 }

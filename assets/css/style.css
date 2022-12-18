@@ -151,7 +151,7 @@ span {
 
 .work {
   border: 5px solid var(--clr-primary);
-  height: 30vh;
+  height: 20vh;
   margin: 2rem 0;
 }
 
@@ -159,22 +159,27 @@ span {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(44, 174, 186, 0.7)),
     url("../images/02-portfolio-1.jpg") center/cover no-repeat;
   transition: var(--transition);
+  grid-area: work1;
 }
 .work2 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(44, 174, 186, 0.7)),
     url("../images/02-portfolio-2.jpg") center/cover no-repeat;
+  grid-area: work2;
 }
 .work3 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(44, 174, 186, 0.7)),
     url("../images/02-portfolio-3.jpg") center/cover no-repeat;
+  grid-area: work3;
 }
 .work4 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(44, 174, 186, 0.7)),
     url("../images/02-portfolio-4.jpg") center/cover no-repeat;
+  grid-area: work4;
 }
 .work5 {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgb(44, 174, 186, 0.7)),
     url("../images/02-run-buddy.jpg") center/cover no-repeat;
+  grid-area: work5;
 }
 
 .work1:hover {
@@ -198,22 +203,55 @@ span {
     url("../images/02-run-buddy.jpg") center/cover no-repeat;
 }
 
-.work-title {
+.work-title-big,
+.work-title-small {
   position: absolute;
-  bottom: 50px;
-  left: 10px;
-  background-color: var(--clr-primary-light);
+  top: 100px;
+  left: 0px;
+  background-color: var(--clr-primary);
   color: var(--clr-grey);
-  padding: 0.25rem;
-  border-radius: var(--radius);
+  padding: 0.5rem;
+  border-top-right-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
 }
 
 @media screen and (min-width: 768px) {
+  .work {
+    margin: 0;
+  }
   .work-top {
     margin: 0;
+  }
+  .work1 {
+    height: 50vh;
+  }
+
+  .section-article {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+      "work1 work1"
+      "work2 work3"
+      "work4 work5";
+  }
+  .work-title-big {
+    top: 400px;
+  }
+  .work-title-small {
+    top: 100px;
   }
 }
 
 /*---------------------------------------*/
 /*----------------contact----------------*/
 /*---------------------------------------*/
+
+.footer-navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--clr-grey);
+  padding: 1rem;
+  color: var(--clr-primary-light);
+  border-radius: var(--radius);
+  margin: 2rem;
+}

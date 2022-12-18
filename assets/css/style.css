@@ -40,22 +40,23 @@ ul {
 a {
   text-decoration: none;
 }
+/*---------------------------------------*/
+/*-----------------header----------------*/
+/*---------------------------------------*/
 
-/*header*/
 .header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: var(--clr-primary);
+  background-color: var(--clr-grey);
   text-shadow: var(--shadow);
 }
 .header-logo {
   color: var(--clr-grey);
-  font-size: 3rem;
+  background-color: var(--clr-primary);
 }
 span {
   color: var(--clr-primary-light);
-  font-size: 4rem;
 }
 
 .header-navbar {
@@ -96,3 +97,27 @@ span {
   margin-right: 1rem;
   border-radius: var(--radius);
 }
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  .header-logo {
+    border: 15px solid var(--clr-grey);
+    border-left: 0;
+  }
+}
+
+/*---------------------------------------*/
+/*----------------about me---------------*/
+/*---------------------------------------*/
+
+/*---------------------------------------*/
+/*----------------portfolio--------------*/
+/*---------------------------------------*/
+
+/*---------------------------------------*/
+/*----------------contact----------------*/
+/*---------------------------------------*/

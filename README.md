@@ -14,7 +14,7 @@ Build With:
 
 The structure of the site got built with HTML followed by CSS what is responsible for the look
 
-![alt text](http://url/to/img.png)
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/Moorgal/bc2_PortfolioHtmlCss/blob/main/assets/images/Portfolio_Screenshot_1.jpg)
+![alt text](https://github.com/Moorgal/bc2_PortfolioHtmlCss/blob/main/assets/images/Portfolio_Screenshot_2.jpg)
 
 <!-- ![alt text](http://url/to/img.png) -->

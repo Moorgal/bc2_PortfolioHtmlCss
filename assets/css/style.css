@@ -160,6 +160,7 @@ span {
   border: 5px solid var(--clr-primary);
   height: 20vh;
   margin: 2rem 0;
+  display: block;
 }
 
 .work1 {

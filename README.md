@@ -14,6 +14,9 @@ Build With:
 
 The structure of the site got built with HTML followed by CSS what is responsible for the look
 
+Deployed Application:
+https://moorgal.github.io/bc2_PortfolioHtmlCss/
+
 ![alt text](https://github.com/Moorgal/bc2_PortfolioHtmlCss/blob/main/assets/images/Portfolio_Screenshot_1.jpg)
 ![alt text](https://github.com/Moorgal/bc2_PortfolioHtmlCss/blob/main/assets/images/Portfolio_Screenshot_2.jpg)
 
